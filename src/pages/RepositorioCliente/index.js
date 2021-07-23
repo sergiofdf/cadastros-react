@@ -15,9 +15,10 @@ export default function ClientTable() {
         setRepositories(clientRepositoryTable);
         setHeaders(Object.keys(clientRepositoryTable[0]));
     }else{
-        history.push('/')
+      alert('Não existem Clientes Cadastrados Ainda!')
+      history.push('/product')
     }
-    }, []);
+    }, [history]);
 
 
     return(

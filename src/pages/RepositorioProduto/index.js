@@ -18,7 +18,7 @@ export default function ProductTable() {
         alert('Não existem Produtos Cadastrados Ainda!')
         history.push('/product')
     }
-    }, []);
+    }, [history]);
 
 
     return(
